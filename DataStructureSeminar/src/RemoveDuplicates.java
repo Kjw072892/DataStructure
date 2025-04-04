@@ -1,38 +1,31 @@
 package DataStructureSeminar.src;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Objects;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class RemoveDuplicates {
     private RemoveDuplicates() {}
 
-    public static Stack<String> removeDuplicates(String str) {
-        Stack<String> output= new Stack<>();
+    public static Stack<Character> removeDuplicates(String str) {
+        Stack<Character> output = new Stack<>();
 
-        Scanner parse = new Scanner(str);
-
-        while (parse.hasNext()) {
-
-            try {
-                if (!parse.next().equals(output.peek())) {
-                    output.push(parse.next());
-                } else if(parse.next().equals(output.peek())) {
-                    output.pop();
-                }
-            } catch (NoSuchElementException NSE) {
-
+        for(int i = 0; i < str.length(); i++) {
+            if(output.isEmpty() || str.charAt(i) != output.peek()
+                    && output.search(str.charAt(i)) == -1){
+                output.push(str.charAt(i));
+            } else if(str.charAt(i) == output.peek()) {
+                output.pop();
             }
         }
+
 
         return output;
     }
 
     public static void main(String[] args) {
-        RemoveDuplicates.removeDuplicates("abbaca");
+        System.out.println(removeDuplicates("abbaca"));
+        System.out.println(removeDuplicates("aabbacactc"));
+        System.out.println(removeDuplicates("azzaazazcz"));
+        System.out.println(removeDuplicates("abracadabra"));
     }
 
 }
