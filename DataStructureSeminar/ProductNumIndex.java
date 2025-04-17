@@ -1,4 +1,4 @@
-package DataStructureSeminar.src;
+package DataStructureSeminar;
 
 
 import java.util.HashMap;
