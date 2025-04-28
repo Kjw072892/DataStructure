@@ -10,7 +10,7 @@ import DataStructureLecture.ArrayList.EmptyCollectionException;
  *
  * @author Kassie Whitney
  * @version 4/28/2025
- * @param <T> any primitive or class type object.
+ * @param <T> any primitive or class object type.
  */
 public class LinkedListQueue<T> implements QueueADT<T>  {
     /**
