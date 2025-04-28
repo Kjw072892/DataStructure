@@ -1,8 +1,23 @@
 package Assignments.Assignments_2;
 
+/**
+ * Course: Data Structure
+ * Instructor: Dongfang Zhao
+ * Assignment Name: LinkedList based queue
+ * Due Date: 04/29/2025
+ *
+ * @author Kassie Whitney
+ * @version 4/28/2025
+ */
 public class Josephus {
 
-    public static void josephsProblem(final int numOfPeople, final int stepSize){
+    /**
+     * Solves the Josephus Problem.
+     *
+     * @param numOfPeople the number of people in a circle.
+     * @param stepSize the number of steps taken before a person gets eliminated.
+     */
+    public static void josephusProblem(final int numOfPeople, final int stepSize){
 
         //Creates an empty queue
         LinkedListQueue<Integer> circleOfPeople = new LinkedListQueue<>();
@@ -25,12 +40,13 @@ public class Josephus {
                 System.out.println("soldier " + theSoldier);
             }
 
+            //Sets the person in the front of the queue to the back of the queue.
             nextPerson = circleOfPeople.dequeue();
             circleOfPeople.enqueue(nextPerson);
             counter++;
         }
 
-        // Sets the final person in the queue as the lucky person
+        // Sets the final person in the queue as the lucky person (the last person standing).
         luckyPerson = circleOfPeople.dequeue();
 
         System.out.println("soldier " + luckyPerson);
@@ -38,6 +54,6 @@ public class Josephus {
     }
 
     public static void main(String[] args) {
-       josephsProblem(25,5);
+       josephusProblem(25,5);
     }
 }
