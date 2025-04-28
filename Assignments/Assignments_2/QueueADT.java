@@ -1,3 +1,5 @@
+package Assignments.Assignments_2;
+
 /**
  * QueueADT defines the interface to a queue collection.
  *

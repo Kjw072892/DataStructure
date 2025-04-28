@@ -1,4 +1,4 @@
-package DataStructureLecture.Stack;
+package Assignments.Assignments_2;
 
 
 /**

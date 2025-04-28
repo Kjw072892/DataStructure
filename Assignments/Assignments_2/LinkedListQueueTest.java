@@ -1,6 +1,7 @@
-import Assignments.Assignments_2.LinkedListQueue;
+package Assignments.Assignments_2;
 
-import java.util.*;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 /**
  * This is the test class for the LinkedListQueue implementation.

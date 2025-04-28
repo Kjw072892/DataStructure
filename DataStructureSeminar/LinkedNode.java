@@ -25,7 +25,7 @@ public class LinkedNode<T> {
         this.element = element;
     }
 
-    private T getElement() {
+    public T getElement() {
         return element;
     }
 

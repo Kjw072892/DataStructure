@@ -124,6 +124,7 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
      */
     public T first() throws EmptyCollectionException {
 // TODO: TCSS 342 exercise
+        return null;
     }
 
     /**
@@ -136,6 +137,7 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
      */
     public T last() throws EmptyCollectionException {
 // TODO: TCSS 342 exercise
+        return null;
     }
 
     /**
