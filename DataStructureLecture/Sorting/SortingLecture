@@ -1,0 +1,79 @@
+-Programming assignment #3: due 5/15
+
+-Midterm:
+    highest is 13, lowest is 5.5
+
+So far we discussed the following linear data structures
+    - stacks, queues, lists
+    - Stack: First in, Last out
+    - Queues: First in, First out
+
+Iterators:
+    not useful for stacks or queues
+
+
+Sorting:
+    - Sorting is the process of arranging a group [set] of items into a
+        defined order based on particular criteria [the specific state
+        of the element that we are comparing]
+
+    - Java uses a compareTo method to compare two elements
+    - Many sorting algorithms have been designed:
+        * Sequential sorts: The naive way to sort the set of values [O(n^2)]
+        * Logarithmic sorts: Typically require O(n log n) [lowest theoretical time complexity for sorting] [most
+          optimal]
+           - implicit condition: "Exact sort"
+
+Insertion Sort:
+    - FYI: Textbook has a few more O(n^2) sorting algorithms
+    - Time Complexity: O(n^2)
+    - Insertion sort orders a values by repetitively inserting a particular value into a sorted subset of the list
+
+       3 is sorted. Shift nothing. Insert 9.  [ 3   9   6   1   2]
+
+       3 and 9 are sorted. Shift 9 to the right. Insert 6. [ 3  6   9   1   2]
+
+       3, 6, and 9 are sorted. Shift 9, 6, and 3 to the right. Insert 1. [1   3   6   9   2]
+
+       1, 3, 6, and 9 are sorted. Shift 9, 6, and 3 to the right. insert 2. [1  2  3  6  9]
+
+    - Time complexity:
+        0 + 1 + ... + (n - 1) = [((n-1) * n)) / 2] = O(N^2)
+
+    - Insertion sort orders values by repetitively inserting a particular value into a sorted subset of the list
+
+    - More Specifically:
+        * Consider the first item to be a sorted sublist of length 1
+        * Insert the second item into the sorted sublist, shifting the first item if needed
+        * Insert the third item into the sorted sublist, shifting the other items as needed
+        * Repeat until all values have been inserted into their proper positions
+        * Space Complexity for insertion sort is O(1)
+
+Merge Sort:
+    - Merge sort orders values by recursively dividing the list in half until each sub-list has one element, then
+        recombining
+    - Most optimized sorting algorithm (O(n log n)
+
+    - Dividing arrays in half repeatedly:
+
+                                      [305 65 7 90 120 110 8]
+
+                                 [305 65 7]           [90 120 110 8]
+
+                               [305]   [65 7]      [90 120]     [110 8]
+
+                               [305]  [65] [7]   [90]  [120]   [110]  [8]
+
+                * Merging sorted elements:
+
+                                [305]  [65] [7]   [90]  [120]   [110]  [8] -Broken down to individual elements in array
+
+                                [305]   [7 65]      [90 120]      [8 110]   - compare the two elements, small goes first
+
+                      O(n) ->    [7 65 305]            [8 90 110 120] - Compare the two arrays together and merge
+
+                                       [7 8 65 90 110 120 305] - compare the final two arrays and merge
+
+
+                * Space complexity:
+                    - O(n): Need to create N number of temp. arrays.

@@ -1,8 +1,8 @@
 package DataStructureLecture.Iterator;
 
+import java.util.*;
 import DataStructureLecture.ArrayList.ListADT;
 import DataStructureLecture.Exception.EmptyCollectionException;
-import java.util.*;
 
 /**
  * ArrayList represents an array implementation of a list. The front of
@@ -19,6 +19,7 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
     protected int rear; //the number of elements in the list
     protected T[] list; 
 	protected int modCount;
+    private ArrayListIterator itr;
 
     /**
      * Creates an empty list using the default capacity.
@@ -37,6 +38,7 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
         rear = 0;
         list = (T[])(new Object[initialCapacity]);
 		modCount = 0;
+        itr = new ArrayListIterator();
     }
 
     public void add(T element) {
@@ -46,6 +48,8 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
         list[rear] = element;
         rear++;
         modCount++;
+        itr.iteratorModCount++;
+        itr.current = 0;
     }
 
     /**
@@ -235,15 +239,16 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
      * @return an iterator for the elements in the list
      */
     public Iterator<T> iterator() {
-        return new ArrayListIterator();
+        itr.iteratorModCount = modCount;
+        return itr;
     }
 
 	/**
 	 * ArrayListIterator iterator over the elements of an ArrayList.
 	 */	
 	private class ArrayListIterator implements Iterator<T> {
-		int iteratorModCount;
-		int current;
+		private int iteratorModCount;
+		private int current;
 		
 		/**
 		 * Sets up this iterator using the specified modCount.
@@ -264,10 +269,15 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
 		 *          while the iterator is in use
 		 */
 		public boolean hasNext() throws ConcurrentModificationException {
+
+            boolean result = true;
 			if (iteratorModCount != modCount)
 				throw new ConcurrentModificationException();
-			
-			return (current < rear);
+            if(current == rear){
+                current = 0;
+                result = false;
+            }
+			return result;
 		}
 		
 		/**
@@ -279,13 +289,12 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
 		 * @throws  NoSuchElementException if an element not found exception occurs
 		 * @throws  ConcurrentModificationException if the collection has changed
 		 */
-		public T next() throws ConcurrentModificationException {
-			if (!hasNext())
-				throw new NoSuchElementException();
-			
-			current++;
-			
-			return list[current - 1];
+		public T next()  {
+            if (iteratorModCount != modCount)
+				throw new ConcurrentModificationException();
+            T result = list[current];
+            current++;
+			return result;
 		}
 		
 		/**
@@ -294,23 +303,54 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
 		 * @throws UnsupportedOperationException if the remove method is called
 		 */
 		public void remove() throws UnsupportedOperationException {
-            T[] temp = (T[])(new Object[list.length]);
-            if(!isEmpty()) {
-                list[current] = null;
+            if(isEmpty()){
+                throw new UnsupportedOperationException("iterator");
             }
-            for(int i = 0; i < rear; i++) {
-                if(list[i] == null){
-                    temp[i]=list[i+i];
-                }else{
-                    temp[i] = list[i];
-                }
+            for(int i = current; i < rear; i++){
+                list[i - 1] = list[i];
 
             }
-            list = temp;
+            list[rear - 1] = null;
+            rear--;
 
 		}
+
 		
 	}
+
+    public static void main(String[] args) {
+        ArrayList<String> test = new DataStructureLecture.Iterator.ArrayList<String>();
+        Iterator<String> itr = test.iterator();
+        test.add("one");
+        test.add("two");
+        test.add("three");
+
+
+        while(itr.hasNext()){
+            String temp = itr.next();
+            if(temp.equals("one")){
+                itr.remove();
+            }
+        }
+        System.out.println(test);
+        test.add("one");
+        System.out.println(test);
+        while(itr.hasNext()){
+            String temp = itr.next();
+            if(temp.equals("three")) {
+                itr.remove();
+            }
+        }
+        System.out.println(test);
+        while(itr.hasNext()){
+            String temp = itr.next();
+            if(temp.equals("two")) {
+                itr.remove();
+            }
+        }
+        System.out.println(test);
+
+    }
 
 
 }

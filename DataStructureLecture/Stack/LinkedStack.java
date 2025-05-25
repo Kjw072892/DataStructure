@@ -25,10 +25,10 @@ public class LinkedStack<T> implements StackADT<T>
    * Adds the specified element to the top of this stack.
    * @param element element to be pushed on stack
    */
-   public void push(T element)
-   {
-   LinearNode<T> temp = new LinearNode<T>(element);
-   temp.setNext(top); //Adds the top element and its corrisponding nodes to a temp node;
+   public void push(T element) {
+
+   LinearNode<T> temp = new LinearNode<>(element);
+   temp.setNext(top); //Adds the top element and its corresponding nodes to a temp node;
    top = temp; // The new top gets updated with a newly added node in the rear.
    count++;
 }
@@ -38,13 +38,13 @@ public class LinkedStack<T> implements StackADT<T>
 * @return element from top of stack
 * @throws EmptyCollectionException if the stack is empty
 */
-public T pop() throws EmptyCollectionException
-   {
-   if (isEmpty())
-   throw new EmptyCollectionException("stack");
-   T result = top.getElement();
-   top = top.getNext();
-   count--;
+public T pop() throws EmptyCollectionException {
+   if (isEmpty()) {
+      throw new EmptyCollectionException("stack");
+   }
+      T result = top.getElement();
+      top = top.getNext();
+      count--;
    return result;
 }
 /**

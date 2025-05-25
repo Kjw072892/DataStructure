@@ -188,24 +188,6 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
         return rear;
     }
 
-    /**
-     * Returns a string representation of this list.
-     *
-     * @return the string representation of the list
-     */
-    public String toString() {
-        if (isEmpty())
-            return "[ ]";
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        for (int i = 0; i < rear; i++) {
-            sb.append(list[i]);
-            if (i < rear - 1)
-                sb.append(", ");
-        }
-        sb.append("]");
-        return sb.toString();
-    }
 
     /**
      * Returns an iterator for the elements currently in this list.
@@ -226,7 +208,6 @@ public class ArrayList<T> implements ListADT<T>, Iterable<T> {
         /**
          * Sets up this iterator using the specified modCount.
          *
-         * @param modCount the current modification count for the ArrayList
          */
         public ArrayListIterator() {
             iteratorModCount = modCount;
