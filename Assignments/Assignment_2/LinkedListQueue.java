@@ -1,4 +1,4 @@
-package Assignments.Assignments_2;
+package Assignments.Assignment_2;
 
 import DataStructureLecture.ArrayList.EmptyCollectionException;
 
