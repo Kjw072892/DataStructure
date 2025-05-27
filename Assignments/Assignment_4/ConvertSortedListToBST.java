@@ -1,6 +1,5 @@
 package Assignments.Assignment_4;
 
-import java.util.*;
 
 public class ConvertSortedListToBST<T extends Comparable<T>> {
     private ListNode<T> current;
@@ -25,7 +24,7 @@ public class ConvertSortedListToBST<T extends Comparable<T>> {
         return null;
     }
 
-    int mid = (left + right) / 2;
+    int mid = Math.ceilDiv((left + right), 2);
 
     TreeNode<T> leftChild = convert(left, mid - 1);
 

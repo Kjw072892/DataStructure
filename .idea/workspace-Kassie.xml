@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="697053b1-d87c-46fc-baab-c122f97e11f9" name="Changes" comment="Update lecture folder" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kjw072892&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kjw072892/DataStructure.git&quot;,
+    &quot;accountId&quot;: &quot;6229798b-eff6-4b26-b908-f62adbf24826&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2vEjP08NBE3DIlm6yZ9RAdEkmU4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ArrayList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Assignment1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataStructureLecture.Stack.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Josephus.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListQueue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListQueueTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.PascalTriangle.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PostfixEvaluator.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.PostfixToInfixTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Sorting.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TestBinaryTree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WorkshopLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kassi/OneDrive/Computer/Documents/GitHub/DataStructure/DataStructureLecture/BinaryTree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DataStructureLecture" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kassi\OneDrive\Computer\Documents\GitHub\DataStructure\DataStructureLecture\BinaryTree" />
+      <recent name="C:\Users\Kassi\OneDrive\Computer\Documents\GitHub\DataStructure\Assignments\Assignments_1\Test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kassi\OneDrive\Computer\Documents\GitHub\DataStructure\DataStructureLecture\Iterator" />
+      <recent name="C:\Users\Kassi\OneDrive\Computer\Documents\GitHub\DataStructure\Assignments\Assignments_2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DataStructureLecture.Iterator" />
+      <recent name="Assignments.Assignments_2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestBinaryTree">
+    <configuration name="ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructureLecture.Iterator.ArrayList" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructureLecture.Iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructureLecture.Sorting.MergeSort" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructureLecture.Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PascalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignments.Assignments_3.PascalTriangle" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assignments.Assignments_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructureLecture.Sorting.Sorting" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructureLecture.Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructureLecture.BinaryTree.TestBinaryTree" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructureLecture.BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestBinaryTree" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.ArrayList" />
+        <item itemvalue="Application.PascalTriangle" />
+        <item itemvalue="Application.Sorting" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="697053b1-d87c-46fc-baab-c122f97e11f9" name="Changes" comment="" />
+      <created>1743717100116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743717100116</updated>
+      <workItem from="1743733503552" duration="9135000" />
+      <workItem from="1744124017868" duration="12000" />
+      <workItem from="1745861555726" duration="8267000" />
+      <workItem from="1745870078408" duration="888000" />
+      <workItem from="1745969338021" duration="72000" />
+      <workItem from="1745969448539" duration="3324000" />
+      <workItem from="1745973161800" duration="1476000" />
+      <workItem from="1746132336003" duration="13415000" />
+      <workItem from="1746740905979" duration="3229000" />
+      <workItem from="1747165747818" duration="1871000" />
+      <workItem from="1747336382592" duration="42000" />
+      <workItem from="1747349714003" duration="3170000" />
+      <workItem from="1747777963178" duration="10631000" />
+      <workItem from="1747952621008" duration="463000" />
+      <workItem from="1747957597971" duration="1082000" />
+    </task>
+    <task id="LOCAL-00001" summary="Completed assignment 1">
+      <option name="closed" value="true" />
+      <created>1744928799990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744928799990</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Completed assignment 1">
+      <option name="closed" value="true" />
+      <created>1744928814998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744928814998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Started Assignment 2">
+      <option name="closed" value="true" />
+      <created>1745861806026</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745861806026</updated>
+    </task>
+    <task id="LOCAL-00004" summary="completed assignment 2">
+      <option name="closed" value="true" />
+      <created>1745870272527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745870272528</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completed assignment 2">
+      <option name="closed" value="true" />
+      <created>1745870284157</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745870284157</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completed assignment 2">
+      <option name="closed" value="true" />
+      <created>1745870569816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745870569817</updated>
+    </task>
+    <task id="LOCAL-00007" summary="completed assignment 2">
+      <option name="closed" value="true" />
+      <created>1745870713483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745870713483</updated>
+    </task>
+    <task id="LOCAL-00008" summary="completed assignment 2">
+      <option name="closed" value="true" />
+      <created>1745967705943</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745967705943</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update lecture folder">
+      <option name="closed" value="true" />
+      <created>1748208203986</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748208203986</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update lecture folder">
+      <option name="closed" value="true" />
+      <created>1748208212023</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748208212023</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed assignment 1" />
+    <MESSAGE value="Started Assignment 2" />
+    <MESSAGE value="completed assignment 2" />
+    <MESSAGE value="Update lecture folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update lecture folder" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Assignments/Assignments_3/PascalTriangle.java</url>
+          <line>13</line>
+          <properties class="Assignments.Assignments_3.PascalTriangle" method="pascal">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/DataStructureLecture/Sorting/Sorting.java</url>
+          <line>181</line>
+          <properties class="DataStructureLecture.Sorting.Sorting" method="quickSort">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/DataStructureLecture/Sorting/MergeSort.java</url>
+          <line>11</line>
+          <properties class="DataStructureLecture.Sorting.MergeSort" method="sort">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

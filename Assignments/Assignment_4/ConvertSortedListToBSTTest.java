@@ -21,33 +21,51 @@ public class ConvertSortedListToBSTTest {
 
     public static void main(String[] args) {
         // Accept entire array as input
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the entire array (e.g., [1,2,3,4,5]):");
-        String input = scanner.nextLine();
-        scanner.close();
+         int counter = 1;
 
-        // Parse the input string into an array of integers
-        input = input.trim();
-        if (input.startsWith("[")) input = input.substring(1);
-        if (input.endsWith("]")) input = input.substring(0, input.length() - 1);
+         System.out.println("""
+                 
+                 Enter the entire array (e.g., [1,2,3,4,5])(type 'exit' to \
+                 exit):
+                 """);
+         while(true) {
+            Scanner scanner = new Scanner(System.in);
 
-        String[] strValues = input.split(",");
-        int[] values = new int[strValues.length];
 
-        for (int i = 0; i < strValues.length; i++) {
-            values[i] = Integer.parseInt(strValues[i].trim());
+            System.out.println("Example " + counter);
+            System.out.println("Input: ");
+            String input = scanner.nextLine();
+
+            if ("exit".equalsIgnoreCase(input)) {
+                scanner.close();
+                break;
+            }
+
+            // Parse the input string into an array of integers
+            input = input.trim();
+            if (input.startsWith("[")) input = input.substring(1);
+            if (input.endsWith("]")) input = input.substring(0, input.length() - 1);
+
+            String[] strValues = input.split(",");
+            int[] values = new int[strValues.length];
+
+            for (int i = 0; i < strValues.length; i++) {
+                values[i] = Integer.parseInt(strValues[i].trim());
+            }
+
+            // Create linked list from the input array
+            ListNode<Integer> head = createLinkedList(values);
+
+            // Create instance and convert to BST
+            ConvertSortedListToBST<Integer> converter = new ConvertSortedListToBST<>();
+            TreeNode<Integer> root = converter.sortedListToBST(head);
+
+            // Perform level-order traversal to verify tree structure
+            List<Integer> result = levelOrderTraversal(root);
+            System.out.println("\nOutput: ");
+            System.out.println(result + "\n");
+            counter ++;
         }
-
-        // Create linked list from the input array
-        ListNode<Integer> head = createLinkedList(values);
-
-        // Create instance and convert to BST
-        ConvertSortedListToBST<Integer> converter = new ConvertSortedListToBST<>();
-        TreeNode<Integer> root = converter.sortedListToBST(head);
-
-        // Perform level-order traversal to verify tree structure
-        List<Integer> result = levelOrderTraversal(root);
-        System.out.println(result);
     }
 
     private static <T> List<T> levelOrderTraversal(TreeNode<T> root) {
